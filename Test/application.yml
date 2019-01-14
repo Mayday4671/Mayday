@@ -1,0 +1,14 @@
+server:
+  port: 8713
+
+spring:
+  application:
+    name: Service-Consumer-Lc
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://10.10.11.114:8711/eureka/
